@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HZ EDITZ</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-content">
+            <h1>HZ EDITZ 🎬</h1>
+            <p>Loading...</p>
+            <div class="loader-line"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">HZ EDITZ 🎬</div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#order">Order</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="stars"></div>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <h1>HZ EDITZ 🎬</h1>
+        <h2>Professional Video Editing</h2>
+        <p>Creative & Professional Video Editing at affordable prices.</p>
+
+        <a href="#pricing" class="main-btn">View Prices</a>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+        <h2>🎬 Our Services</h2>
+
+        <div class="service-card">
+            <h3>🎥 Reels & Shorts</h3>
+            <p>Instagram, TikTok & YouTube Shorts editing.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>✨ Cinematic Edits</h3>
+            <p>Professional cinematic effects and transitions.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>🔥 Social Media Edits</h3>
+            <p>Creative edits for your social media content.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+
+        <h2>🎬 My Portfolio</h2>
+
+        <div class="portfolio-grid">
+
+            <div class="portfolio-card">
+                <video controls playsinline preload="metadata" poster="low.jpg" width="100%">
+                    <source src="low.mp4" type="video/mp4">
+                    Your browser does not support video.
+                </video>
+
+                <h3>LOW QUALITY</h3>
+                <p>Affordable video editing — Rs. 300</p>
+            </div>
+
+            <div class="portfolio-card">
+                <video controls playsinline preload="metadata" poster="medium.jpg" width="100%">
+                    <source src="medium.mp4" type="video/mp4">
+                    Your browser does not support video.
+                </video>
+
+                <h3>MEDIUM QUALITY</h3>
+                <p>Clean and stylish editing — Rs. 450</p>
+            </div>
+
+            <div class="portfolio-card">
+                <video controls playsinline preload="metadata" poster="high.jpg" width="100%">
+                    <source src="high.mp4" type="video/mp4">
+                    Your browser does not support video.
+                </video>
+
+                <h3>HIGH QUALITY</h3>
+                <p>Professional editing — Rs. 700</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="pricing">
+        <h2>💎 Our Pricing</h2>
+
+        <div class="price-card">
+            <h3>LOW QUALITY</h3>
+            <p>Rs. 300</p>
+        </div>
+
+        <div class="price-card">
+            <h3>MEDIUM QUALITY</h3>
+            <p>Rs. 450</p>
+        </div>
+
+        <div class="price-card">
+            <h3>HIGH QUALITY</h3>
+            <p>Rs. 700</p>
+        </div>
+    </section>
+
+    <!-- Order Now -->
+    <section id="order" class="order-section">
+
+        <h2>🛒 Order Your Edit</h2>
+
+        <div class="order-card">
+
+            <label for="customerName">Your Name:</label>
+
+            <input
+                type="text"
+                id="customerName"
+                placeholder="Enter your name"
+            >
+
+            <label for="customerNumber">WhatsApp Number:</label>
+
+            <input
+                type="tel"
+                id="customerNumber"
+                placeholder="03XXXXXXXXX"
+            >
+
+            <label for="quality">Select Video Quality:</label>
+
+            <select id="quality">
+
+                <option value="Low Quality - Rs. 300">
+                    Low Quality - Rs. 300
+                </option>
+
+                <option value="Medium Quality - Rs. 450">
+                    Medium Quality - Rs. 450
+                </option>
+
+                <option value="High Quality - Rs. 700">
+                    High Quality - Rs. 700
+                </option>
+
+            </select>
+
+            <label for="details">Video Details:</label>
+
+            <textarea
+                id="details"
+                rows="4"
+                placeholder="Tell us about your video..."
+            ></textarea>
+
+            <!-- Video Upload -->
+            <label for="videoFile">Upload Your Video:</label>
+
+            <input
+                type="file"
+                id="videoFile"
+                accept="video/*"
+            >
+
+            <p class="upload-note">
+                🎥 Select your video file here.
+            </p>
+
+            <button onclick="orderWhatsApp()" class="order-btn">
+                📱 Send Order on WhatsApp
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- About -->
+    <section class="about">
+        <h2>👑 About HZ EDITZ</h2>
+
+        <p>
+            HZ EDITZ provides creative and professional video editing
+            for social media, reels, shorts and cinematic content.
+        </p>
+
+        <p>
+            Our goal is to turn your videos into clean, stylish and
+            eye-catching edits.
+        </p>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us">
+
+        <h2>⭐ Why Choose HZ EDITZ?</h2>
+
+        <div class="why-card">
+            <h3>⚡ Fast Delivery</h3>
+            <p>Quick and reliable video editing service.</p>
+        </div>
+
+        <div class="why-card">
+            <h3>🎨 Creative Editing</h3>
+            <p>Stylish effects, transitions and professional edits.</p>
+        </div>
+
+        <div class="why-card">
+            <h3>💰 Affordable Prices</h3>
+            <p>High-quality editing at reasonable prices.</p>
+        </div>
+
+        <div class="why-card">
+            <h3>📱 Social Media Ready</h3>
+            <p>Edits made for Instagram, YouTube and TikTok.</p>
+        </div>
+
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="testimonials">
+
+        <h2>💬 Customer Reviews</h2>
+
+        <div class="review-card">
+            <div class="stars-rating">★★★★★</div>
+            <p>"Amazing editing and really clean work!"</p>
+            <h3>— Happy Client</h3>
+        </div>
+
+        <div class="review-card">
+            <div class="stars-rating">★★★★★</div>
+            <p>"Great effects and professional editing."</p>
+            <h3>— Satisfied Client</h3>
+        </div>
+
+        <div class="review-card">
+            <div class="stars-rating">★★★★★</div>
+            <p>"Fast delivery and excellent quality."</p>
+            <h3>— HZ EDITZ Client</h3>
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>📩 Contact Us</h2>
+
+        <a href="https://wa.me/923330753540" target="_blank" class="whatsapp-btn">
+            📱 Order on WhatsApp
+        </a>
+
+        <a href="https://instagram.com/huzaifa616v" target="_blank" class="instagram-btn">
+            📸 Follow on Instagram
+        </a>
+    </section>
+
+    <!-- Schedule -->
+    <section class="schedule">
+        <h2>🕒 My Schedule</h2>
+
+        <div class="schedule-card">
+            <p><strong>Monday - Friday</strong></p>
+            <p>4:00 PM — 10:00 PM</p>
+        </div>
+
+        <div class="schedule-card">
+            <p><strong>Saturday - Sunday</strong></p>
+            <p>12:00 PM — 10:00 PM</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <h2>HZ EDITZ 🎬</h2>
+
+        <p>Professional Video Editing</p>
+
+        <p class="copyright">
+            © 2026 HZ EDITZ. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <!-- Back To Top -->
+    <button id="backToTop" onclick="goToTop()">
+        ↑
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+
+        function orderWhatsApp() {
+
+            const name =
+                document.getElementById("customerName").value.trim();
+
+            const number =
+                document.getElementById("customerNumber").value.trim();
+
+            const quality =
+                document.getElementById("quality").value;
+
+            const details =
+                document.getElementById("details").value.trim();
+
+            const video =
+                document.getElementById("videoFile").files[0];
+
+            if (name === "" || number === "" || details === "") {
+
+                alert("Please fill all the order details.");
+
+                return;
+            }
+
+            let videoName = "No video selected";
+
+            if (video) {
+                videoName = video.name;
+            }
+
+            const message =
+                "Assalamualaikum! 👋\n\n" +
+                "I want to order a video edit.\n\n" +
+                "Name: " + name + "\n" +
+                "WhatsApp: " + number + "\n" +
+                "Quality: " + quality + "\n" +
+                "Video Details: " + details + "\n" +
+                "Selected Video: " + videoName;
+
+            window.open(
+                "https://wa.me/923330753540?text=" +
+                encodeURIComponent(message),
+                "_blank"
+            );
+        }
+
+
+        function goToTop() {
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+        }
+
+
+        window.addEventListener("scroll", function () {
+
+            const button =
+                document.getElementById("backToTop");
+
+            if (window.scrollY > 300) {
+
+                button.classList.add("show");
+
+            } else {
+
+                button.classList.remove("show");
+
+            }
+
+        });
+
+
+        /* Loading Screen */
+
+        window.addEventListener("load", function () {
+
+            const loader =
+                document.getElementById("loader");
+
+            setTimeout(function () {
+
+                loader.classList.add("hide");
+
+            }, 1200);
+
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -232,6 +232,7 @@ section h2 {
     border-radius: 15px;
     overflow: hidden;
     padding-bottom: 20px;
+    transition: transform 0.2s ease;
 }
 
 .portfolio-card video {
@@ -240,6 +241,11 @@ section h2 {
     height: 220px;
     object-fit: cover;
     background: #000;
+    border-radius: 10px;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-4px);
 }
 
 .portfolio-card h3 {
@@ -333,6 +339,27 @@ section h2 {
     border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.order-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.order-btn:active {
+    transform: scale(0.98);
+}
+
+.order-card input[type="file"] {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.order-card input:focus,
+.order-card select:focus,
+.order-card textarea:focus {
+    border-color: #777;
 }
 
 /* =========================
@@ -444,6 +471,85 @@ section h2 {
 
 .instagram-btn {
     background: #9b3d83;
+}
+
+/* =========================
+   JazzCash Payment
+========================= */
+
+.jazzcash-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.jazzcash-card {
+    width: 100%;
+    max-width: 420px;
+    padding: 35px 25px;
+    background:
+        linear-gradient(145deg, #151515, #080808);
+    border: 1px solid #333;
+    border-radius: 20px;
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.7),
+        inset 0 0 20px rgba(255, 255, 255, 0.02);
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.jazzcash-card:hover {
+    transform: translateY(-5px);
+    border-color: #555;
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.8),
+        0 0 25px rgba(255, 255, 255, 0.05);
+}
+
+.jazzcash-card h3 {
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+.jazzcash-card #jazzcashNumber {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 22px;
+    padding: 15px;
+    background: #050505;
+    border: 1px solid #333;
+    border-radius: 12px;
+}
+
+.jazzcash-btn {
+    width: 100%;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.jazzcash-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.jazzcash-btn:active {
+    transform: scale(0.98);
+}
+
+.payment-note {
+    color: #999;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-top: 18px;
 }
 
 /* =========================
@@ -570,7 +676,12 @@ section h2 {
         width: 100%;
         max-width: 400px;
     }
+
+    .jazzcash-card {
+        max-width: 400px;
+    }
 }
+
 @media (max-width: 500px) {
 
     .navbar {
@@ -614,48 +725,13 @@ section h2 {
         width: 100%;
         height: auto;
     }
-}
-/* Professional Order Button */
 
-.order-btn {
-    transition: transform 0.2s ease, opacity 0.2s ease;
-}
+    .jazzcash-card {
+        padding: 28px 18px;
+    }
 
-.order-btn:hover {
-    transform: translateY(-2px);
-    opacity: 0.9;
-}
-
-.order-btn:active {
-    transform: scale(0.98);
-}
-
-/* Better File Upload */
-
-.order-card input[type="file"] {
-    padding: 10px;
-    cursor: pointer;
-}
-
-/* Better Form Focus */
-
-.order-card input:focus,
-.order-card select:focus,
-.order-card textarea:focus {
-    border-color: #777;
-}
-/* Professional Portfolio Videos */
-
-.portfolio-card video {
-    border-radius: 10px;
-    background: #000;
-    display: block;
-}
-
-.portfolio-card {
-    transition: transform 0.2s ease;
-}
-
-.portfolio-card:hover {
-    transform: translateY(-4px);
-}
+    .jazzcash-card #jazzcashNumber {
+        font-size: 23px;
+        letter-spacing: 1px;
+    }
+    }
